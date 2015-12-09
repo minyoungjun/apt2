@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>apart:mentary</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <!-- Custom styles for this template -->
+    <style>
+      @-webkit-viewport { width: device-width; }
+      @-moz-viewport    { width: device-width; }
+      @-ms-viewport     { width: device-width; }
+      @-o-viewport      { width: device-width; }
+      @viewport         { width: device-width; }
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script>
+      (function () {
+        'use strict';
+      
+        function emulatedIEMajorVersion() {
+            var groups = /MSIE ([0-9.]+)/.exec(window.navigator.userAgent)
+                if (groups === null) {
+                      return null
+                          }
+                              var ieVersionNum = parseInt(groups[1], 10)
+                                  var ieMajorVersion = Math.floor(ieVersionNum)
+                                      return ieMajorVersion
+                                        }
+                                        
+                                          function actualNonEmulatedIEMajorVersion() {
+                                              // Detects the actual version of IE in use, even if it's in an older-IE emulation mode.
+                                              // IE JavaScript conditional compilation docs: https://msdn.microsoft.com/library/121hztk3%28v=vs.94%29.aspx
+                                              // @cc_on docs: https://msdn.microsoft.com/library/8ka90k2e%28v=vs.94%29.aspx
+                                              var jscriptVersion = new Function('/*@cc_on return @_jscript_version; @*/')() // jshint ignore:line
+                                                  if (jscriptVersion === undefined) {
+                                                        return 11 // IE11+ not in emulation mode
+                                                            }
+                                              if (jscriptVersion < 9) {
+                                                    return 8 // IE8 (or lower; haven't tested on IE<8)
+                                                  }
+                                              return jscriptVersion // IE9 or IE10 in any mode, or IE11 in non-IE11 mode
+                                            }
+      
+        var ua = window.navigator.userAgent
+        if (ua.indexOf('Opera') > -1 || ua.indexOf('Presto') > -1) {
+            return // Opera, which might pretend to be IE
+          }
+        var emulated = emulatedIEMajorVersion()
+        if (emulated === null) {
+            return // Not IE
+          }
+        var nonEmulated = actualNonEmulatedIEMajorVersion()
+      
+        if (emulated !== nonEmulated) {
+            window.alert('WARNING: You appear to be using IE' + nonEmulated + ' in IE' + emulated + ' emulation mode.\nIE emulation modes can behave significantly differently from ACTUAL older versions of IE.\nPLEASE DON\'T FILE BOOTSTRAP BUGS based on testing in IE emulation modes!')
+          }
+      })();
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container" style="width:100%;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/pink_logo.svg" style="height:24px;margin-top:-2px;"/> </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" >
+            <li><a href="#" style="color:#f3a6a2;">WE ARE</a></li>
+            <li><a href="#TEAM" style="color:#f3a6a2;">TEAM</a></li>
+            <li><a href="http://blog.naver.com/mintshampoo" style="color:#f3a6a2;">BLOG</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="width:100%; padding-top:0px; padding-bottom:0px;">
+      <div class="container" style="width:100%; padding:0;">
+        <img src="images/pc_01.png" class="main_pc" style="width:100%;"/>
+        <img src="images/pc_02.png" class="main_pc" style="width:100%;">
+        <img src="images/main_mobile1.png" class="main_mobile" style="width:100%;"/>
+        <img src="images/main_mobile2.png" class="main_mobile" style="width:100%;">
+      </div>
+    </div>
+
+    <div id="TEAM" class="container">
+      <!-- Example row of columns -->
+      <div class="row" style="margin-bottom:40px;">
+        <div style="width:80%; margin-left:10%;">
+          <div class="col-md-3"style="margin-bottom:40px;">
+            <img src="images/soyeon.png" style="width:100%;">
+            <div style="text-align:center;">
+              <img src="images/mail.svg" style="width:15px; margin-top:5px;">
+            </div>
+          </div>
+          <div class="col-md-3"style="margin-bottom:40px;">
+            <img src="images/taewung.png" style="width:100%;">
+            <div style="text-align:center;">
+              <img src="images/mail.svg" style="width:15px; margin-top:5px;">
+            </div>
+         </div>
+          <div class="col-md-3"style="margin-bottom:40px;">
+            <img src="images/eun.png" style="width:100%;">
+            <div style="text-align:center;">
+              <img src="images/mail.svg" style="width:15px; margin-top:5px;">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/jiwon.png" style="width:100%;">
+            <div style="text-align:center;">
+              <img src="images/mail.svg" style="width:15px; margin-top:5px;">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="background-color:#f2f2f2; margin:0; width:100%; padding-top: 100px; padding-bottom: 80px;">
+        <div class="col-sm-12 col-md-8 col-md-offset-2" style="text-align:center;">
+          <img src="images/ment.png" style="width:100%; margin-bottom:60px;"/>
+          <div class="col-md-6" style="margin-bottom:20px;">
+            <img src="images/button1.png" style="width:80%; cursor:pointer;" onclick="$('#fix').val(0); $('#myModal').modal();" />
+          </div>
+          <div class="col-md-6" style="margin-bottom:20px;">
+            <img src="images/button2.png" style="width:80%;cursor:pointer;"onclick="$('#fix').val(1); $('#myModal').modal();" />
+          </div>
+        </div>
+      </div>
+      
+
+      <footer style="margin-top:30px;">
+        <div class="col-md-6 col-md-offset-3" style="text-align:center; margin-bottom:30px;">
+          <img src="images/footer_logo.png" style="width:50%;"/>
+        </div>
+      </footer>
+    </div> <!-- /container -->
+<div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" style="padding:20px;">
+        <form action="http://52.32.184.203:4567/" method="post">
+          <input type="hidden" name="fix" value="0" id="fix">
+          <input type="text" class="form-control"name="name" placeholder="이름" style="border:1px solid #ffaca1; color:#ffaca1; margin-bottom:10px;">
+          <input type="text" class="form-control "placeholder="이메일" style="border:1px solid #ffaca1;color:#ffaca1;margin-bottom:10px;" name="email" >
+          <input type="submit" class="form-control" value="보내기" style="background-color:#ffaca1; border: 1px solid #ffaca1; color:white;">
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+
+      (function () {
+        'use strict';
+      
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style')
+            msViewportStyle.appendChild(
+                  document.createTextNode(
+                          '@-ms-viewport{width:auto!important}'
+                        )
+                )
+            document.querySelector('head').appendChild(msViewportStyle)
+          }
+      
+      })();
+    </script>
+  </body>
