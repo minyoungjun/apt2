@@ -7,6 +7,15 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,300,500);
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.profile_image {
+  cursor:pointer;
+}
+.profile_image img{
+   opacity: 0;
+   filter: alpha(opacity=0); 
+  width:100%;
+}
+
 html {
   font-family: 'Work Sans', "Nanum Gothic", 'sans-serif';
   -webkit-text-size-adjust: 100%;
@@ -2450,6 +2459,9 @@ table th[class*="col-"] {
   .main_pc {
     display:none;
   }
+  .main_re {
+    display:none;
+  }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -2921,9 +2933,6 @@ select[multiple].input-lg {
 }
 @media (min-width: 768px) {
 
-  .main_mobile {
-    display:none;
-  }
 
   .form-inline .form-group {
     display: inline-block;
@@ -6636,6 +6645,13 @@ button.close {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .main_re {
+    display:none;
+  }
+
+  .main_mobile {
+    display:none;
+  }
   .visible-sm-inline-block {
     display: inline-block !important;
   }
@@ -6668,9 +6684,23 @@ button.close {
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-inline-block {
     display: inline-block !important;
+
+  }
+  .main_mobile {
+    display:none;
+  }
+  .main_pc {
+    display:none;
   }
 }
 @media (min-width: 1200px) {
+
+  .main_mobile {
+    display:none;
+  }
+  .main_pc {
+    display:none;
+  }
   .visible-lg {
     display: block !important;
   }
